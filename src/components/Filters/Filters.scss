@@ -1,0 +1,43 @@
+$darkRed: #b80909;
+$fontColor: #ffffe6;
+$fontWeight: 400;
+$fontFamily:'Quicksand', sans-serif;
+
+.filters {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    select {
+        appearance: none;
+        font-family: $fontFamily;
+        color: $darkRed;
+
+        padding: 10px 36px 10px 12px;
+        border-radius: 20px;
+        border: 1px solid $darkRed;
+        background-color: $fontColor;
+        cursor: pointer;
+
+        background-image: url("data:image/svg+xml;utf8,<svg fill='%23b80909' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .filters {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .filters {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,140 @@
+$darkRed: #b80909;
+$fontColor: #ffffe6;
+$fontWeight: 400;
+$fontFamily: 'Quicksand', sans-serif;
+
+
+.header {
+  background-color: $darkRed;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 80px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+
+  a {
+    text-decoration: none;
+    color: $fontColor;
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 18px;
+    transition: transform 0.3s, font-weight 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+        font-weight: 500;
+    }
+  }
+}
+
+
+.logo {
+  justify-self: center;
+  font-family: "Modak", serif;
+  font-size: 50px;
+  color: $fontColor;
+  text-decoration: none;
+  padding: 0 80px;
+}
+
+
+.burger {
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        padding: 0 50px;
+        font-size: 36px;
+    }
+
+    .nav-left, .nav-right {
+        gap: 30px;
+
+        a {
+            font-size: 18px;
+        }
+    }   
+}
+
+@media (max-width: 480px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .burger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: $fontColor;
+    cursor: pointer;
+  }
+
+
+  .nav-mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $darkRed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.3s;
+
+    a {
+        text-decoration: none;
+        font-family: $fontFamily;
+        color: $fontColor;
+    }
+  }
+
+  .nav-mobile.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+
+    a {
+        text-decoration: none;
+        font-family: $fontFamily;
+        color: $fontColor;
+
+    }
+  }
+}

@@ -1,0 +1,24 @@
+$darkRed: #b80909;
+$fontColor: #ffffe6;
+$fontWeight: 400;
+$fontFamily: 'Quicksand', sans-serif;
+
+.back-button {
+    background-color: transparent;
+    color: $darkRed;
+    font-family: $fontFamily;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    text-align: center;
+    transition: transform 0.3s, border 0.3s;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        border: 1px solid $darkRed;
+    }
+}

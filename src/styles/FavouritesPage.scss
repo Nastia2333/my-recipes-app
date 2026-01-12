@@ -1,0 +1,47 @@
+$darkRed: #b80909;
+$fontColor: #ffffe6;
+$fontWeight: 400;
+$fontFamily: 'Quicksand', sans-serif;
+
+
+.favourites-banner {
+    background-color: $fontColor;
+    color: $darkRed;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding: 30px;
+}
+
+
+.fav-cards {
+    padding: 30px 80px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    row-gap: 30px;
+    border-bottom: 1px solid $fontColor;
+}
+
+.fav-empty-state {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $fontColor;
+    border-bottom: 1px solid $fontColor;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+
+    p {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px){
+    .fav-cards {
+        padding: 30px 40px;
+    }
+}

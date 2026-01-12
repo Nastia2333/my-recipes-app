@@ -1,0 +1,35 @@
+$darkRed: #b80909;
+$fontColor: #ffffe6;
+$fontWeight: 400;
+$fontFamily:'Quicksand', sans-serif;
+
+
+.fav-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border: 1.2px $darkRed solid;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    
+    &:hover{
+        cursor: pointer;
+        background-color: $darkRed;
+
+        .heart {
+            fill: $fontColor;
+        }
+
+    }
+
+    .heart {
+        color: $darkRed;
+        height: 24px;
+        width: 24px;
+        transition: stroke 0.3s;
+    }
+}

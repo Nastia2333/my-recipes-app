@@ -1,0 +1,86 @@
+$darkRed: #b80909;
+$fontColor: #ffffe6;
+$fontWeight: 400;
+$fontFamily:'Quicksand', sans-serif;
+
+.recipe-card {
+  position: relative;
+  width: 400px;
+  height: 320px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  background-color: $fontColor;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  .recipe-card__content {
+    display: flex;
+    z-index: 1;
+    transition: filter 0.3s;
+
+    .recipe-card__text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+      padding: 0 15px;
+      color: $darkRed;
+      font-weight: 400;
+    }
+
+     img {
+      height: 100%;
+      width: 50%;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+  }
+
+  .recipe-card__content.blur {
+    filter: blur(100px);
+  }
+
+  .recipe-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 230, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  .recipe-card__overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .recipe-card__button {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: $fontFamily;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    color: $darkRed;
+    cursor: pointer;
+    font-weight: 700;
+    z-index: 5;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+  }
+}
