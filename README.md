@@ -50,10 +50,7 @@ src/
 
 # Getting Started
 
-1. Clone the repository:
-
-`[git clone https://github.com/Anastasiia_Hr/my-recipe-app.git](https://github.com/Nastia2333/my-recipes-app.git)`
-
+1. Clone the repository.
 
 2. Install dependencies:
 
