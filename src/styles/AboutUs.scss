@@ -116,7 +116,7 @@ main {
 
             &:nth-of-type(8){
                 top: 160px;
-                left: -190px;
+                left: -170px;
                 width: 250px;
                 height: 250px;
                 z-index: 5;
@@ -269,5 +269,12 @@ main {
 
     .recipes-info {
         padding: 0 40px 40px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .photos {
+        justify-content: space-between;
+        padding: 0 80px;
     }
 }
