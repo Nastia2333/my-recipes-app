@@ -3,9 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { recipes } from '../data/recipes'
 import { BackButton, Favourite } from '../components/index';
-import clock from '../assets/icons/Clock.svg'
-import category from '../assets/icons/Category.svg'
-import level from '../assets/icons/Level2.svg'
+import { allImages } from "../components/images";
 import '../styles/RecipeDetailedPage.scss'
 
 export function RecipeDetailedPage() {
@@ -65,7 +63,7 @@ export function RecipeDetailedPage() {
                     <div className="recipe-parameters">
                         <div className="recipe-category">
                             <div className="recipe-category-icon">
-                                <img src={category} alt="Category"></img>
+                                <img src={allImages[16]} alt="Category"></img>
                             </div>
                             <div className="recipe-category-values">
                                 <h4>Category</h4>
@@ -74,7 +72,7 @@ export function RecipeDetailedPage() {
                         </div>
                         <div className="recipe-time">
                             <div className="recipe-time-icon">
-                                <img src={clock} alt="Clock"></img>
+                                <img src={allImages[15]} alt="Clock"></img>
                             </div>
                             <div className="recipe-time-values">
                                 <h4>Time</h4>
@@ -83,7 +81,7 @@ export function RecipeDetailedPage() {
                         </div>
                         <div className="recipe-difficulty">
                             <div className="recipe-time-icon">
-                                <img src={level} alt="Level"></img>
+                                <img src={allImages[17]} alt="Level"></img>
                             </div>
                             <div className="recipe-difficulty-values">
                                 <h4>Difficulty</h4>

@@ -1,11 +1,6 @@
 import React from "react";
 import '../styles/Home.scss';
-import croissants from '../assets/images/croissants.JPG';
-import pastry9 from '../assets/images/pastry9.JPG';
-import pastry2 from '../assets/images/pastry2.JPG';
-import pastry3 from '../assets/images/pastry3.JPG';
-import pastry6 from '../assets/images/pastry6.JPG';
-import newpastry2 from '../assets/images/new_pastry2.JPG';
+import { allImages } from "../components/images";
 import { ButtonHome, Form, RecipeCarousel } from "../components";
 
 export function Home() {
@@ -19,7 +14,7 @@ export function Home() {
                 <RecipeCarousel />
             </section>
             <section className="home-third">
-                <img src={croissants} alt="Croissants"></img>
+                <img src={allImages[9]} alt="Croissants"></img>
                 <div className="welcome-banner">
                     <div className="banner-text">
                         This blog is a place where simple ingredients turn into thoughtful recipes.
@@ -32,7 +27,7 @@ export function Home() {
                 <div className="form">
                     < Form />
                 </div>
-                <img src={newpastry2} alt="Pastry"></img>
+                <img src={allImages[14]} alt="Pastry"></img>
             </section>
             <section className="section-light">
                 <div className="marquee">
@@ -52,10 +47,10 @@ export function Home() {
                 </div>
             </section>
             <section className="home-fifth">
-                <img src={pastry9} alt="Pastry"></img>
-                <img src={pastry2} alt="Pastry"></img>
-                <img src={pastry3} alt="Pastry"></img>
-                <img src={pastry6} alt="Pastry"></img>
+                <img src={allImages[10]} alt="Pastry"></img>
+                <img src={allImages[11]} alt="Pastry"></img>
+                <img src={allImages[12]} alt="Pastry"></img>
+                <img src={allImages[13]} alt="Pastry"></img>
             </section>
         </main>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import '../styles/RecipesPage.scss';
 import { useState, useEffect } from "react";
 import { recipes } from "../data/recipes.js";
-import NoSearchResult from '../assets/icons/NoSearchResult.svg'
+import { allImages } from "../components/images.js";
 import { RecipePageCard, Filters, Search } from "../components/index.js";
 
 export const RecipesPage = () => {
@@ -110,7 +110,7 @@ export const RecipesPage = () => {
             </section>
             {paginatedRecipes.length === 0 && (
                     <div className="empty">
-                        <img src={NoSearchResult} alt="No result"></img>
+                        <img src={allImages[18]} alt="No result"></img>
                         <p className="empty-state">No results found.</p>
                     </div>
                 )}

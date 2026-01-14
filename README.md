@@ -40,6 +40,8 @@ src/
     ├── {components_folders}/
         ├── {component.jsx}
         ├── {component.scss}
+    ├── index.js
+    ├── images.js 
 ├── data/
 ├── pages/
 ├── styles/

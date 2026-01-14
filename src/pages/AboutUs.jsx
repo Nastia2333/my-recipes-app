@@ -1,15 +1,7 @@
 import React from "react";
-import photo1 from '../assets/photos/recipe15.JPG'
-import photo2 from '../assets/photos/recipe16.JPG'
-import photo3 from '../assets/photos/recipe7.JPG'
-import photo4 from '../assets/photos/recipe19.JPG'
-import photo5 from '../assets/photos/recipe3.JPG'
-import photo6 from '../assets/photos/recipe26.JPG'
-import photo7 from '../assets/photos/recipe24.JPG'
-import photo8 from '../assets/photos/recipe8.JPG'
+import { allImages } from "../components/images.js";
 import { Form, ButtonHome } from '../components/index.js'
 import '../styles/AboutUs.scss';
-import aboutUs from '../assets/images/about1.JPG';
 
 export function AboutUs() {
     return(
@@ -21,19 +13,19 @@ export function AboutUs() {
                     Over time, the focus became clear: well-balanced flavors, understandable steps, and reliable results. Each recipe is tested, adjusted, and written with care, so you can enjoy the process as much as the outcome. This blog is not about perfection, but about learning, improving, and finding joy in baking at your own pace.
                     </p>
                 </div>
-                <img src={aboutUs} alt="Bakery" loading="lazy"></img>
+                <img src={allImages[8]} alt="Bakery" loading="lazy"></img>
             </section>
 
             <section className="photos-section">
                 <div className="photos">
-                    <img src={photo1} alt="Pastry" loading="lazy"></img>
-                    <img src={photo2} alt="Pastry" loading="lazy"></img>
-                    <img src={photo3} alt="Pastry" loading="lazy"></img>
-                    <img src={photo4} alt="Pastry" loading="lazy"></img>
-                    <img src={photo5} alt="Pastry" loading="lazy"></img>
-                    <img src={photo6} alt="Pastry" loading="lazy"></img>
-                    <img src={photo7} alt="Pastry" loading="lazy"></img>
-                    <img src={photo8} alt="Pastry" loading="lazy"></img>
+                    <img src={allImages[0]} alt="Pastry" loading="lazy"></img>
+                    <img src={allImages[1]} alt="Pastry" loading="lazy"></img>
+                    <img src={allImages[2]} alt="Pastry" loading="lazy"></img>
+                    <img src={allImages[3]} alt="Pastry" loading="lazy"></img>
+                    <img src={allImages[4]} alt="Pastry" loading="lazy"></img>
+                    <img src={allImages[5]} alt="Pastry" loading="lazy"></img>
+                    <img src={allImages[6]} alt="Pastry" loading="lazy"></img>
+                    <img src={allImages[7]} alt="Pastry" loading="lazy"></img>
                 </div>
             </section>
             <section className="recipes-info">
