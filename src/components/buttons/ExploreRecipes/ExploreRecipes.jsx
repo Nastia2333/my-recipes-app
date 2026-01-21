@@ -1,4 +1,3 @@
-import React from "react";
 import '../ExploreRecipes/ExploreRecipes.scss';
 
 export function ExploreRecipes(){

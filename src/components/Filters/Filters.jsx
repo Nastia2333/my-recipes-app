@@ -1,4 +1,3 @@
-import React from "react";
 import '../Filters/Filters.scss'
 
 export function Filters({ filters, onChange }) {

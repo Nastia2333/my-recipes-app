@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { BackButton, Favourite } from '../../components/index';
 import { recipes } from '../../data/recipes'

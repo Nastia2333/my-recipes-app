@@ -1,4 +1,3 @@
-import React from "react";
 import '../Snackbar/Snackbar.scss'
 
 export function Snackbar({message, visible}) {

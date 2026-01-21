@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactComponent as InstaIcon} from '../../assets/icons/instagram.svg';
 import { ReactComponent as FacebookIcon} from '../../assets/icons/facebook.svg';
 import { ReactComponent as TwitterIcon} from '../../assets/icons/twitter.svg';

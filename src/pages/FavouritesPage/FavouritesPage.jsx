@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FavCard, ExploreRecipes } from "../../components/index";
 import '../FavouritesPage/FavouritesPage.scss'
 

@@ -1,4 +1,3 @@
-import React from "react";
 import '../ButtonHome/ButtonHome.scss';
 
 export function ButtonHome(){

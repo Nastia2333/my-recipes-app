@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import { navigateToRecipe } from "../../utils/navigation";
 import { Favourite } from "../index";

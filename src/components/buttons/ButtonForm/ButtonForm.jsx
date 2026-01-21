@@ -1,4 +1,3 @@
-import react from "react";
 import '../ButtonForm/ButtonForm.scss';
 
 export function ButtonForm(){

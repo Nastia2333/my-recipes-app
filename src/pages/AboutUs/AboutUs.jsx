@@ -1,4 +1,3 @@
-import React from "react";
 import { Form, ButtonHome } from '../../components/index.js'
 import { allImages } from "../../assets/images.js";
 import '../AboutUs/AboutUs.scss';

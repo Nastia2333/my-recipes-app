@@ -1,4 +1,3 @@
-import React from "react";
 import '../Search/Search.scss'
 
 export function Search({searchQuery, onChange}){

@@ -1,4 +1,3 @@
-import React from "react";
 import '../Favourite/Favourite.scss';
 
 export function Favourite( {isActive, onClick}){

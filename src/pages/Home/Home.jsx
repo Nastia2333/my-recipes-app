@@ -1,4 +1,3 @@
-import React from "react";
 import { ButtonHome, Form, RecipeCarousel } from "../../components/index";
 import { allImages } from "../../assets/images";
 import '../Home/Home.scss';
