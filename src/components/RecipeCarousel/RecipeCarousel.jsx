@@ -2,13 +2,14 @@ import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay, Pagination } from "swiper/modules";
 
+import { RecipeCard } from "../index";
+import recipes from "../../data/recipes";
+
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "../RecipeCarousel/RecipeCarousel.scss";
 
-import recipes from "../../data/recipes";
-import { RecipeCard } from "../index";
 
 export function RecipeCarousel() {
   const swiperRef = useRef(null);

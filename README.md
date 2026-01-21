@@ -41,12 +41,15 @@ src/
         ├── {component.jsx}
         ├── {component.scss}
     ├── index.js
-    ├── images.js 
 ├── data/
-├── pages/
+├── utils/
+├── layouts/
 ├── styles/
+├── pages/
+    ├── {pages_folders}/
+        ├── {page.jsx}
+        ├── {page.scss}
 ├── App.jsx
-├── index.css
 └── index.js
 
 

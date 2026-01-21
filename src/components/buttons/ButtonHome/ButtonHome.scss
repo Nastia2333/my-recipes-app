@@ -1,6 +1,4 @@
-$darkRed: #b80909;
-$fontWeight: 400;
-$fontFamily: 'Quicksand', sans-serif;
+@use '../../../styles/variables.scss' as *;
 
 .button-home {
     color: $darkRed;

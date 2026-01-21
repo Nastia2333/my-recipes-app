@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import '../RecipePageCard/RecipePageCard.scss';
+import { navigateToRecipe } from "../../utils/navigation.js";
 import { Favourite } from "../../components/index.js";
+import '../RecipePageCard/RecipePageCard.scss';
 
 
 export function RecipePageCard({ recipe, favourites, onToggleFavourite }){
@@ -9,11 +10,7 @@ export function RecipePageCard({ recipe, favourites, onToggleFavourite }){
     const navigate = useNavigate();
 
     const handleCardClick = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-            });
-        navigate(`/recipes/${recipe.id}`);
+        navigateToRecipe(navigate, recipe.id)
     }
 
     const isFavourite = favourites.some((item) => item.id === recipe.id);

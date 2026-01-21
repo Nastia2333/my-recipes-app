@@ -1,7 +1,7 @@
 import React from "react";
-import '../styles/Home.scss';
-import { allImages } from "../components/images";
-import { ButtonHome, Form, RecipeCarousel } from "../components";
+import { ButtonHome, Form, RecipeCarousel } from "../../components/index";
+import { allImages } from "../../assets/images";
+import '../Home/Home.scss';
 
 export function Home() {
     return (

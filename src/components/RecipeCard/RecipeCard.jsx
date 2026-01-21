@@ -1,15 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { navigateToRecipe } from "../../utils/navigation";
 import "../RecipeCard/RecipeCard.scss";
 
 export function RecipeCard({ recipe, swiperRef }) {
   const navigate = useNavigate();
   const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-    navigate(`/recipes/${recipe.id}`)
+    navigateToRecipe(navigate, recipe.id)
   };
 
   const [hover, setHover] = useState(false);

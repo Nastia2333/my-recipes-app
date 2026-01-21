@@ -1,18 +1,14 @@
-$darkRed: #b80909;
-$fontColor: #ffffe6;
-$fontWeight: 400;
-$fontFamily:'Quicksand', sans-serif;
+@use '../../styles/variables.scss' as *;
 
 
 .home {
-    // width: 100%;
     font-family: $fontFamily;
     font-weight: $fontWeight;
 
     .home-first {
         padding: 100px 0px;
         background-color: $darkRed;
-        background-image: url(../assets/images/back16.JPG);
+        background-image: url(../../assets/images/back16.JPG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -161,8 +157,8 @@ $fontFamily:'Quicksand', sans-serif;
 
             img {
                 border-radius: 15px;
-                width: 100%;
-                height: 250px;
+                width: 70%;
+                height: 300px;
             }
 
             .welcome-banner {

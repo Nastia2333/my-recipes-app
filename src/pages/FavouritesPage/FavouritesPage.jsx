@@ -1,7 +1,6 @@
-import React from "react";
-import '../styles/FavouritesPage.scss'
-import { useEffect, useState } from "react";
-import { FavCard, ExploreRecipes } from "../components/index";
+import React, { useEffect, useState } from "react";
+import { FavCard, ExploreRecipes } from "../../components/index";
+import '../FavouritesPage/FavouritesPage.scss'
 
 export function FavouritesPage(){
     const [favourites, setFavourites] = useState([]);

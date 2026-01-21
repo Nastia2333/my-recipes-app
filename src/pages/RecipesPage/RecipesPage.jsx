@@ -1,9 +1,9 @@
-import React from "react";
-import '../styles/RecipesPage.scss';
-import { useState, useEffect } from "react";
-import { recipes } from "../data/recipes.js";
-import { allImages } from "../components/images.js";
-import { RecipePageCard, Filters, Search } from "../components/index.js";
+import React, { useState, useEffect } from "react";
+import { RecipePageCard, Filters, Search } from "../../components/index.js";
+import { recipes } from "../../data/recipes.js";
+import { allImages } from "../../assets/images.js";
+import '../RecipesPage/RecipesPage.scss';
+
 
 export const RecipesPage = () => {
     const [searchQuery, setSearchQuery] = useState("");

@@ -1,7 +1,7 @@
 import React from "react";
-import { allImages } from "../components/images.js";
-import { Form, ButtonHome } from '../components/index.js'
-import '../styles/AboutUs.scss';
+import { Form, ButtonHome } from '../../components/index.js'
+import { allImages } from "../../assets/images.js";
+import '../AboutUs/AboutUs.scss';
 
 export function AboutUs() {
     return(
@@ -18,14 +18,13 @@ export function AboutUs() {
 
             <section className="photos-section">
                 <div className="photos">
-                    <img src={allImages[0]} alt="Pastry" loading="lazy"></img>
-                    <img src={allImages[1]} alt="Pastry" loading="lazy"></img>
-                    <img src={allImages[2]} alt="Pastry" loading="lazy"></img>
-                    <img src={allImages[3]} alt="Pastry" loading="lazy"></img>
-                    <img src={allImages[4]} alt="Pastry" loading="lazy"></img>
-                    <img src={allImages[5]} alt="Pastry" loading="lazy"></img>
-                    <img src={allImages[6]} alt="Pastry" loading="lazy"></img>
-                    <img src={allImages[7]} alt="Pastry" loading="lazy"></img>
+                    {allImages.map((image, index)=> (
+                        <img 
+                        key={index}
+                        src={image}
+                        alt="Pastry"
+                        loading="lazy"></img>
+                    ))}
                 </div>
             </section>
             <section className="recipes-info">

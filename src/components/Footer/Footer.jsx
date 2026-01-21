@@ -1,9 +1,9 @@
 import React from "react";
-import '../Footer/Footer.scss';
 import { ReactComponent as InstaIcon} from '../../assets/icons/instagram.svg';
 import { ReactComponent as FacebookIcon} from '../../assets/icons/facebook.svg';
 import { ReactComponent as TwitterIcon} from '../../assets/icons/twitter.svg';
 import { ReactComponent as ThreadsIcon} from '../../assets/icons/threads.svg';
+import '../Footer/Footer.scss';
 
 
 export const Footer = ()=> {

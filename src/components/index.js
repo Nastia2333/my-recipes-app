@@ -1,12 +1,14 @@
-export * from './Header/Header';
-export * from './Footer/Footer';
+export * from '../layouts/Layout';
+
+export * from './Header/Header'
+export * from './Footer/Footer'
 export * from './Snackbar/Snackbar';
 
-export * from '../pages/Home'
-export * from '../pages/RecipesPage'
-export * from '../pages/RecipeDetailedPage'
-export * from '../pages/AboutUs'
-export * from '../pages/FavouritesPage'
+export * from '../pages/Home/Home'
+export * from '../pages/RecipesPage/RecipesPage'
+export * from '../pages/RecipeDetailedPage/RecipeDetailedPage'
+export * from '../pages/AboutUs/AboutUs'
+export * from '../pages/FavouritesPage/FavouritesPage'
 
 
 export * from './Form/Form'

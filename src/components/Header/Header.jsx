@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react"; 
+import React, { useState } from "react";
+import { menuItems } from "../../data/menu";
 import '../Header/Header.scss'
 
 export function Header() {
@@ -30,10 +30,15 @@ export function Header() {
         </button>
 
         <div className={`nav-mobile ${menuOpen ? "open" : ""}`}>
-          <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="/recipes" onClick={() => setMenuOpen(false)}>Recipes</a>
-          <a href="/favourites" onClick={() => setMenuOpen(false)}>Favourites</a>
-          <a href="/about-us" onClick={() => setMenuOpen(false)}>About Us</a>
+          {menuItems.map((item)=> (
+            <a 
+              key={item.path}
+              href={item.path}
+              onClick={()=> setMenuOpen(false)}
+            >
+            {item.label}
+            </a>
+          ))}
         </div>
       </nav>
     </header>

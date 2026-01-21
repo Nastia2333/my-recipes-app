@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { recipes } from '../data/recipes'
-import { BackButton, Favourite } from '../components/index';
-import { allImages } from "../components/images";
-import '../styles/RecipeDetailedPage.scss'
+import { BackButton, Favourite } from '../../components/index';
+import { recipes } from '../../data/recipes'
+import { allImages } from "../../assets/images";
+import '../RecipeDetailedPage/RecipeDetailedPage.scss'
 
 export function RecipeDetailedPage() {
     const navigate = useNavigate();

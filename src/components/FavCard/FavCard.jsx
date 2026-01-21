@@ -1,14 +1,15 @@
 import React from "react";
-import '../FavCard/FavCard.scss';
-import { Favourite } from "../index";
 import { useNavigate } from "react-router-dom";
+import { navigateToRecipe } from "../../utils/navigation";
+import { Favourite } from "../index";
+import '../FavCard/FavCard.scss';
 
 
 export function FavCard({recipe, favourites, onToggleFavourite}){
 
     const navigate = useNavigate();
     const handleCardClick = () => {
-        navigate(`/recipes/${recipe.id}`);
+        navigateToRecipe(navigate, recipe.id)
     };
     
     const isFavourite = favourites.some((item)=> item.id===recipe.id);

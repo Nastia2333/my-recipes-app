@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Header, Footer, Home, RecipesPage, RecipeDetailedPage, AboutUs, FavouritesPage } from './components/index';
-import { useEffect } from "react";
-import { allImages } from "./components/images";
+import { Layout, Home, RecipesPage, RecipeDetailedPage, AboutUs, FavouritesPage } from './components/index';
+import { allImages } from "./assets/images";
 
 function App() {
   useEffect(()=> {
@@ -14,7 +13,7 @@ function App() {
 
   return (
     <BrowserRouter> 
-      < Header />
+      <Layout>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,8 +22,8 @@ function App() {
         <Route path="/favourites" element={<FavouritesPage />} />
         <Route path="/about-us" element={<AboutUs />} />
       </Routes>
+      </Layout>
       
-      < Footer />
     </BrowserRouter>     
   );
 }

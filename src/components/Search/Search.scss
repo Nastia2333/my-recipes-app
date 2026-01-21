@@ -1,7 +1,4 @@
-$darkRed: #b80909;
-$fontColor: #ffffe6;
-$fontWeight: 400;
-$fontFamily:'Quicksand', sans-serif;
+@use '../../styles/variables.scss' as *;
 
 .search {
     display: flex;
